@@ -1,14 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Forms from './Components/Forms';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import ReactDOM from "react-dom";
+import Container from "./Components/Container";
 
-function App() {
-  return (
-    <div className="App">
-      <Forms/>
-    </div>
-  );
-}
 
-export default App;
+  ReactDOM.render(
+    <Router>
+        <Container />
+      </Router>,
+      document.querySelector('#target'),
+    
+  )
+
+
